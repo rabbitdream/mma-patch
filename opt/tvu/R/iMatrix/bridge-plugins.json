@@ -1,0 +1,17 @@
+{
+	"speech-plugin": {
+		"dll-name": "lib_speech_recog",
+		"http-port":9980,
+		"server-address":"127.0.0.1:8024",
+		"speechPilot-address": "http://mma.tvunetworks.com/api/petkeeper/v1/getServer",
+		"payload-size": 7500,
+		"caption-path":"/usr/share/nginx",
+		"srt-path":"/data/file/nginx",
+		"appkey":"43b7551497090dc459db21dd25d87ddc",
+		"app-secretkey":"583ff2ccb16dae7770696f6ee5190352",
+		"app-account":"webteam@tvunetworks.com"
+	},
+	"vision-plugin": {
+		"dll-name": "lib_vision"
+	}
+}

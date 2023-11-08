@@ -1,0 +1,13 @@
+[Unit]
+Description=TVU localfacerecongnition for MMA
+
+[Service]
+ExecStart=/opt/tvu/R/iMatrix/facerecognition/start.sh 
+WorkingDirectory=/opt/tvu/R/iMatrix/facerecognition
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
+
+

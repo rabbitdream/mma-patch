@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiproxy>
+	<speech>
+		<cc_audio_codec>3</cc_audio_codec>
+		<cc_lines>3</cc_lines>
+        <cc_max_chars>40</cc_max_chars>
+		<AutoStop>1</AutoStop>
+		<Mcc>0</Mcc>
+		<ccdedcoder>1</ccdedcoder>
+	</speech>
+	<vision>
+		<cc_vision_dump_image>0</cc_vision_dump_image>
+		<cc_vision_min_capture_interval>2000</cc_vision_min_capture_interval>
+        <cc_vision_max_capture_interval>20000</cc_vision_max_capture_interval>
+		<cc_vision_compress_frequence>15</cc_vision_compress_frequence>
+	</vision>
+</aiproxy>

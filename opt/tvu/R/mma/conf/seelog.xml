@@ -1,0 +1,10 @@
+<seelog minlevel="debug">
+	<outputs formatid="main">
+		<buffered size="10000" flushperiod="1000">
+			<rollingfile type="size" filename="log/SyncServer.log" maxsize="100000000" maxrolls="20"/>
+		</buffered>
+	</outputs>
+	<formats>
+		<format id="main" format="[%Date(2006-01-02 15:04:05.999 PM MST)] [%Level] [%File:%Line:%Func] %Msg%n"/>
+	</formats>
+</seelog>

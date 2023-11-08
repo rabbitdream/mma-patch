@@ -1,0 +1,4 @@
+Cognition version information:
+1.0.0.5build5
+65859
+2023-09-26 06:59

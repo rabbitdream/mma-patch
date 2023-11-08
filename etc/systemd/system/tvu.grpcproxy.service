@@ -1,0 +1,13 @@
+[Unit]
+Description=TVU grpc proxy for MMA.
+
+
+[Service]
+ExecStart=/opt/tvu/grpcproxy/proxy_start.sh 127.0.0.1:5005 127.0.0.1:5006  /opt/tvu/config/tvuservicelist.json  mma.tvunetworks.com:8570 metadataproto.proto
+WorkingDirectory=/opt/tvu/grpcproxy
+Restart=always
+RestartSec=2
+
+
+[Install]
+WantedBy=multi-user.target

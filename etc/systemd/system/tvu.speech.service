@@ -1,0 +1,13 @@
+[Unit]
+Description=TVU speech for MMA
+
+[Service]
+ExecStart=/opt/tvu/R/iMatrix/google_speech 127.0.0.1:8024
+WorkingDirectory=/opt/tvu/R/iMatrix
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+
+

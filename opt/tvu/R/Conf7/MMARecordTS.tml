@@ -1,0 +1,14 @@
+[Video]
+GlobalQuality=26
+Bitrate = "copy"
+Codec = "H264"
+GOP=30
+Resolution="copy"
+Scale="fast_bilinear"
+Preset="veryfast"
+
+[Audio]
+Bitrate="64K"
+Channel="2"
+Codec="aac"
+SampleRate="48000"

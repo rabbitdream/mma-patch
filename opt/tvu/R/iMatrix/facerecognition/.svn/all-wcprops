@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gentoo/!svn/ver/45310/trunk/products/cognition/facerecognition
+END
+start.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gentoo/!svn/ver/45185/trunk/products/cognition/facerecognition/start.sh
+END
+tvu.localface.service
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gentoo/!svn/ver/43856/trunk/products/cognition/facerecognition/tvu.localface.service
+END
+local_face_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gentoo/!svn/ver/45240/trunk/products/cognition/facerecognition/local_face_server.py
+END
+classifier.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gentoo/!svn/ver/42254/trunk/products/cognition/facerecognition/classifier.py
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gentoo/!svn/ver/43840/trunk/products/cognition/facerecognition/README.md
+END
+mtcnn_facenet.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gentoo/!svn/ver/45310/trunk/products/cognition/facerecognition/mtcnn_facenet.py
+END
+grpc_client.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/gentoo/!svn/ver/42833/trunk/products/cognition/facerecognition/grpc_client.py
+END
+dataset.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gentoo/!svn/ver/45185/trunk/products/cognition/facerecognition/dataset.py
+END

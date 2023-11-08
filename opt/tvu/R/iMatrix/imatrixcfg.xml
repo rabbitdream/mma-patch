@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<imatrix>
+	<httpctrlport>
+		7001
+	</httpctrlport>
+	<haveaudio>
+		1
+	</haveaudio>
+	<!-- the default value of haveaudio is 1-->
+	<aiproxy>
+		0
+	</aiproxy>
+	<aiproxyport>
+		10924
+	</aiproxyport>
+	<relayrunscript>
+		udp_xor_relay.exe --recv -m %s -s %s --xor_nr 6 --rcv_nr 20 --time_shift 3000
+	</relayrunscript>
+	<!--make sure the order and format of -m %s -s %s, otherwise wooh~~-->
+	<panasonicrunscript>
+		%s -v %d -a %d -r %d -s %d
+	</panasonicrunscript>
+	<enablelog>
+		0
+	</enablelog>
+	<!-- the default value of enablelog is 1-->
+	<selfinfo pid="0x4CFD10FC476F9091" name=""/>
+	<youtube_googlevideo_flow_control>
+		16000
+	</youtube_googlevideo_flow_control>
+	<standbyOutputAudio>
+		0
+	</standbyOutputAudio>
+	<cc_server_url>
+		127.0.0.1:5005
+	</cc_server_url>
+	<cc_proxy_server>
+		<enable>
+			1
+		</enable>
+		<meta_server_url>
+			metadata.tvunetworks.com:8570
+		</meta_server_url>
+		<proto_file>
+			metadataproto.proto
+		</proto_file>
+	</cc_proxy_server>
+	<visionTagOverlay>
+		<enable>
+			0
+		</enable>
+		<fontSize>
+			60
+		</fontSize>
+		<fontColor>
+			#FFFFFFFF
+		</fontColor>
+		<maxChar>
+			60
+		</maxChar>
+		<lineNum>
+			5
+		</lineNum>
+	</visionTagOverlay>
+	<videoTextOverlay>
+		<enable>
+			0
+		</enable>
+		<fontName>
+			SimSun
+		</fontName>
+		<fontSize>
+			60
+		</fontSize>
+		<foregroundColor>
+			#FFFFFFFF
+		</foregroundColor>
+		<backgroundColor>
+			#00FFFFFF
+		</backgroundColor>
+		<strokeColor>
+			#FF505050
+		</strokeColor>
+		<strokeLineWidth>
+			1.0
+		</strokeLineWidth>
+		<!-- strokeLineWidth value range for 0.3 to 4.0,default is 1.0 -->
+		<bold>
+			1
+		</bold>
+		<italic>
+			0
+		</italic>
+		<xOffset>
+			40
+		</xOffset>
+		<yOffset>
+			20
+		</yOffset>
+		<backgroundWidth>
+			0
+		</backgroundWidth>
+		<backgroundHeight>
+			0
+		</backgroundHeight>
+		<sourceTextCoding>
+			UTF-8
+		</sourceTextCoding>
+		<text>
+			Default_content
+		</text>
+	</videoTextOverlay>
+	<output>
+		<frozenpicture>
+			0
+		</frozenpicture>
+		<!-- 1/0. the default value is 1, enable frozen picture  -->
+		<onceplay>
+			1
+		</onceplay>
+		<!-- 1/0. the default value is 0,enable start player once for EXT just enabled it when add MMA Patch  -->
+		<enablesdi>
+			1
+		</enablesdi>
+		<!--1/0. the default value of enablesdi is 1-->
+		<enablebypass>
+			1
+		</enablebypass>
+		<!--1/0. the default value of enablebypass is 1-->
+		<sditype>
+			0
+		</sditype>
+		<!--0, decklink; 1-AJA, 2-dektec -->
+		<enabledektec>
+			0
+		</enabledektec>
+		<mode>
+			1080I5994
+		</mode>
+		<!--the default value of enablesdi is 1080i5994-->
+		<outputcardid>
+			0
+		</outputcardid>
+		<!--the default value of outputcardid is 0-->
+		<output_pixel_format>
+			uyvy8bit
+		</output_pixel_format>
+		<!--
+        value can be:
+            1. uyvy8bit
+            2. uyvy10bit
+    -->
+		<!--
+        * Note: 
+        * 1) the default value 'last', last frame is kept, 
+        * 2) 'black' means the last frame is a black iamge.
+        * 3) 'logo' means the last frame is customer configured image.
+        *     see 'logoImage', 'logoXoffset' and 'logoYoffset' for details.
+    -->
+		<lastframe>
+			Logo
+		</lastframe>
+		<!--
+        * Note: the BMP file must 24-colored, 
+        * and, the located at 'iMatrix' folder.
+        * and, the width must be multiple of 4 pixels.
+    -->
+		<logoImage>
+			tvulogo.png
+		</logoImage>
+		<!--
+        * Note: these two field can be a unsigned number, 
+        * or a key word, such as 'center'.
+    -->
+		<logoXoffset>
+			center
+		</logoXoffset>
+		<logoYoffset>
+			10
+		</logoYoffset>
+		<customLogo>
+			customlog.png
+		</customLogo>
+		<cusLogoXoffset>
+			10
+		</cusLogoXoffset>
+		<cusLogoYoffset>
+			10
+		</cusLogoYoffset>
+		<!--if this field is 0, do not display clock on logo -->
+		<logoClock>
+			1
+		</logoClock>
+		<decklink>
+			<snapshot>
+				0
+			</snapshot>
+			<snapTimeoutMinutes>
+				10
+			</snapTimeoutMinutes>
+			<overlay>
+				0
+			</overlay>
+			<EnableCC>
+				1
+			</EnableCC>
+			<ScteLineNum>
+				10
+			</ScteLineNum>
+			<CloseTimeout>
+				200
+			</CloseTimeout>
+			<!-- switcher will exit as it is blocked by CloseDecklink() for CloseTimeout milliseconds -->
+			<MultipleAudioChannelsSupport>
+				1
+			</MultipleAudioChannelsSupport>
+			<!--
+            value can be :
+            1   - enable multiple channels support.
+            0   - disable multiple channels support.
+        -->
+		</decklink>
+		<!-- in seconds, if 0, disable it-->
+		<duration>
+			0
+		</duration>
+		<!-- check this to decide if display Name, 1 for yes, 0 for no -->
+		<displayName>
+			1
+		</displayName>
+		<!-- check this to decide if display PID, 1 for yes, 0 for no -->
+		<displayPID>
+			1
+		</displayPID>
+		<!-- check this to decide if display R Name, 1 for yes, 0 for no -->
+		<displayRName>
+			1
+		</displayRName>
+		<!-- check this to decide if display R PID, 1 for yes, 0 for no -->
+		<displayRPID>
+			1
+		</displayRPID>
+	</output>
+	<inputs>
+		<!--
+        <input id="r">
+                <address>http://10.12.23.11:9999/xyz</address><streamtype>1</streamtype>
+                <ttype>0</ttype><tver>4.5</tver><tpid>0x0CB66BBBFF17CFD0</tpid><tname>T_Tvucore</tname><delay>0</delay>
+        </input>
+
+        <input id="1">
+                <address>D:\\Video\\qinghua.mpg</address><streamtype>3</streamtype>
+        </input>
+
+        <input id="file"><streamtype>3</streamtype><tag></tag><address>D:\\Download\\Film\\Incendies.2010.BluRay.720p.x264.AC3-HDChina\\Incendies.2010.BluRay.720p.x264.AC3-HDChina.mkv</address></input>
+
+        <input id="multicast1"><type>udp</type><tag></tag><address>mudp://227.0.0.1:20000|udp://@127.0.0.1:30000</address></input>
+        <input id="multicast2"><type>udp</type><tag></tag><address>mudp://227.0.0.1:20001|udp://@127.0.0.1:30001</address></input>
+
+        <input id="1"><type>http</type><tag></tag><address>http://127.0.0.1:12345</address></input>
+        <input id="2"><type>http</type><tag></tag><address>http://127.0.0.1:12345</address></input>
+  
+    <input id="grid1"><type>http</type><tag></tag><address>http://10.12.32.13:10001</address></input>
+    <input id="grid2"><type>http</type><tag></tag><address>http://10.12.32.13:10002</address></input>
+    <input id="r"><type>http</type><tag></tag><address>http://10.12.23.11:9999/xyz</address></input>
+    <input id="unicast"><type>udp</type><tag></tag><address>udp://@0.0.0.0:12345</address></input>
+    <input id="multicast"><type>udp</type><tag></tag><address>udp://@225.1.1.1:1234</address></input>
+        -->
+	</inputs>
+	<libplayer>
+		<cache_time>
+			2000
+		</cache_time>
+		<!-- the default value of cachetime is 1000 millisecond -->
+		<delay>
+			250
+		</delay>
+		<!-- the default value of playerdeltams is 250-->
+		<live_const_delay>
+			100
+		</live_const_delay>
+		<!-- this value is const delay for live, means decklink capture to Share memory time on T -->
+		<timeout>
+			60000
+		</timeout>
+		<!-- stream timeout, default 60 seconds -->
+		<mlink_reorder_ms>
+			3000
+		</mlink_reorder_ms>
+		<switch_field>
+			-1
+		</switch_field>
+		<!--   
+                -1  : invalid, use code logic
+                0   : not switch
+                1   : switch field
+        -->
+		<video_decode_thread_number>
+			1
+		</video_decode_thread_number>
+		<hevc_decode_thread_number>
+			8
+		</hevc_decode_thread_number>
+		<!--
+        0   : decoder computer decoding thread number by itself
+        1   : decoder use one thread
+    -->
+		<max_timestamp_drift>
+			5000
+		</max_timestamp_drift>
+		<!-- timestamp later, reset interval should be less than the value -->
+		<!--
+    @brief:     Set RTSP transport protocols.
+    any:            Default value in ffmpeg.
+    udp:            Use UDP as lower transport protocol.  
+    tcp:            Use TCP (interleaving within the RTSP control channel) as lower transport protocol.
+    udp_multicast:  Use UDP multicast as lower transport protocol.
+    http:           Use HTTP tunneling as lower transport protocol, which is useful for passing proxies.
+    -->
+		<rtsp_transport>
+			any
+		</rtsp_transport>
+		<issp_data_timeout>
+			3000
+		</issp_data_timeout>
+		<enable_output_timeout>
+			1
+		</enable_output_timeout>
+		<hw_decoding_async_depth>
+			4
+		</hw_decoding_async_depth>
+		<h264_hw_decoding_buffer_time>
+			250
+		</h264_hw_decoding_buffer_time>
+		<hevc_hw_decoding_buffer_time>
+			250
+		</hevc_hw_decoding_buffer_time>
+	</libplayer>
+	<playeroftvu>
+		<!--   
+        5  : debug
+        4  : verbose
+        1  : info
+        2  : warn
+        3  : error
+        6  : fatal
+        0  : panic
+-->
+		<log_level>
+			1
+		</log_level>
+		<log_file_size>
+			31457280
+		</log_file_size>
+		<log_file_counts>
+			5
+		</log_file_counts>
+		<hevc_hw_decoding>
+			1
+		</hevc_hw_decoding>
+		<h264_hw_decoding>
+			0
+		</h264_hw_decoding>
+		<cc_delay_time>
+			6000
+		</cc_delay_time>
+		<cc_lines>
+			2
+		</cc_lines>
+		<cc_max_chars>
+			40
+		</cc_max_chars>
+		<!--
+		0	: Bottom
+		1	: Top
+		-->
+		<cc_caption_position>
+			0
+		</cc_caption_position>
+		<cc_caption_font>
+			4
+		</cc_caption_font>
+		<!--
+                0       : cc708_only
+                1       : cc608_708_both
+                2       : op47
+        -->
+		<cc_caption_type>
+			0
+		</cc_caption_type>
+		<!--
+        0 for AMR-NB
+        1 for AMR-WB
+        2 for FLAC
+        3 for PCM_16k
+        -->
+		<cc_audio_codec>
+			1
+		</cc_audio_codec>
+		<cc_language>
+			en-US
+		</cc_language>
+		<cc_speech_enable>
+		    1
+		</cc_speech_enable>
+		<cc_overwrite>
+			1
+		</cc_overwrite>
+		<cc_srt_path_win>
+			C:\Transcriber
+		</cc_srt_path_win>
+		<cc_srt_path_linux>
+			/usr/share/nginx
+		</cc_srt_path_linux>
+		<cc_replace_file_path_linux>
+		</cc_replace_file_path_linux>
+		<cc_fix_facebook_live>
+			0
+		</cc_fix_facebook_live>
+		<cc_auto_sensing_duration>
+			4000
+		</cc_auto_sensing_duration>
+		<cc_vision_use_old_logical>
+			0
+		</cc_vision_use_old_logical>
+		<cc_vision_enable>
+			0
+		</cc_vision_enable>
+		<cc_vision_language>
+			1
+		</cc_vision_language>
+		<cc_vision_recog_content_index>
+			241
+		</cc_vision_recog_content_index>
+		<cc_vision_pts_offset>
+			8000
+		</cc_vision_pts_offset>
+		<cc_vision_dump_image>
+			0
+		</cc_vision_dump_image>
+		<cc_vision_detect_level>
+			0.2
+		</cc_vision_detect_level>
+		<cc_vision_min_capture_interval>
+			2000
+		</cc_vision_min_capture_interval>
+		<cc_vision_max_capture_interval>
+			20000
+		</cc_vision_max_capture_interval>
+		<cc_vision_compress_frequence>
+			15
+		</cc_vision_compress_frequence>
+		<cc_replace_file_path_linux>
+		    /opt/tvu/R/UserSetting/replace.txt
+		</cc_replace_file_path_linux>
+	</playeroftvu>
+	<player>
+		<cache_time>
+			1000
+		</cache_time>
+		<!-- the default value of cachetime is 1000 millisecond -->
+		<delay>
+			100
+		</delay>
+		<!-- the default value of playerdeltams is 250-->
+		<live_const_delay>
+			100
+		</live_const_delay>
+		<!-- this value is const delay for live, means decklink capture to Share memory time on T -->
+		<timeout>
+			10000
+		</timeout>
+		<!-- stream timeout, default 10 seconds -->
+		<log_level>
+			1
+		</log_level>
+		<log_file_size>
+			52428800
+		</log_file_size>
+		<log_file_counts>
+			4
+		</log_file_counts>
+		<mlink_reorder_ms>
+			3000
+		</mlink_reorder_ms>
+		<switch_field>
+			-1
+		</switch_field>
+		<!--   
+                -1  : invalid, use code logic
+                0   : not switch
+                1   : switch field
+        -->
+	</player>
+</imatrix>

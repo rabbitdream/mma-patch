@@ -1,0 +1,136 @@
+8
+
+dir
+59734
+http://10.12.20.126/svn/gentoo/trunk/products/cognition/facerecognition
+http://10.12.20.126/svn/gentoo
+
+
+
+2019-12-17T08:25:32.186118Z
+45310
+sailingzhang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be1918dc-a61c-4540-b5fe-ee70b441e662
+
+README.md
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+a8d58c2b4baca402c009f0f7c5410993
+2019-09-19T06:18:51.794402Z
+43840
+sailingzhang
+
+classifier.py
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+5f3b17c1c897b4512f69f2118d424eaa
+2019-06-12T07:00:38.006634Z
+42254
+sailingzhang
+
+dataset.py
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+b532a1853b55bac4d14143dc3e407eb8
+2019-12-05T07:57:04.393228Z
+45185
+sailingzhang
+
+embed_model
+dir
+
+facenet
+dir
+
+faceproto
+dir
+
+grpc_client.py
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+6af5673361dcfa635aedf3ecc1c09fe6
+2019-07-24T03:04:33.860680Z
+42833
+sailingzhang
+
+local_face_server.py
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+5a11c2043b5d882fadef99541c2077de
+2019-12-11T08:42:51.672030Z
+45240
+sailingzhang
+
+log
+dir
+
+mtcnn_facenet.py
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+a3da64f91d73d029fb4729bab1331107
+2019-12-17T08:25:32.186118Z
+45310
+sailingzhang
+
+start.sh
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+ecd54a3415190174c29a8dcb7f87c3ee
+2019-12-05T07:57:04.393228Z
+45185
+sailingzhang
+
+tvu.localface.service
+file
+
+
+
+
+2023-08-24T06:11:58.000000Z
+5e279317c51efa6a843eb248afe6b97a
+2019-09-19T09:44:17.764078Z
+43856
+sailingzhang
+

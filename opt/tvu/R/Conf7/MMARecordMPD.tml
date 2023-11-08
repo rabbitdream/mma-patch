@@ -1,0 +1,14 @@
+[Video]
+GlobalQuality=30
+Bitrate = "300K"
+Codec = "H.264"
+GOP=30
+Resolution="480:272"
+Scale="fast_bilinear"
+Preset="veryfast"
+
+[Audio]
+Bitrate="32K"
+Channel="2"
+Codec="aac"
+SampleRate="48000"

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gentoo/!svn/ver/45308/trunk/products/tvutransport/prj/tools/mp4tran/lualib/resty
+END
+http.lua
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gentoo/!svn/ver/45308/trunk/products/tvutransport/prj/tools/mp4tran/lualib/resty/http.lua
+END
+http_headers.lua
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gentoo/!svn/ver/45308/trunk/products/tvutransport/prj/tools/mp4tran/lualib/resty/http_headers.lua
+END

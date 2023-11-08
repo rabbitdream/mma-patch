@@ -1,0 +1,55 @@
+{
+	"group_id":"classifyface",
+	"train_classify":true,
+	
+	"train_confidenceThreshold":0.8,
+	"train_face_filter":true,
+	"train_face_filter_area":7500,
+	"train_face_filter_number":40,
+	"train_face_filter_blurvalue":0.67,
+	"train_face_filter_upper_exposurevalue":0.8,
+	"train_face_filter_lower_exposurevalue":0.2,
+	"train_face_filter_noiseValue":0.75,
+	
+	"identify_confidenceThreshold":0.8,
+	"identify_face_filter":true,
+	"identify_face_filter_area":6000,
+	"identify_face_filter_number":40,
+	"identify_face_filter_blurvalue":1,
+	"identify_face_filter_upper_exposurevalue":1,
+	"identify_face_filter_lower_exposurevalue":0,
+	"identify_face_filter_noiseValue":1,
+
+	"max_task_num":500,
+	"identify_from_local":false,
+	"local_faced_host":"127.0.0.1:40051",
+	"is_localfile_localperson_map":true,
+	"local_detect_enable":true,
+	"local_detect_timeout":1000,
+	"extract_frame_num":150,
+	
+	"local_analyze_scale":2,
+	"local_analyze_min_area":8100,	
+	"local_analyze_show_image":false,
+
+	"imagebed_addr":"https://mma.tvunetworks.com/api/imgbed/v1/vision/",
+	
+	"local_detect_internal":2,
+	"local_track_imgtype":0,
+	"is_track_server":true,
+	"track_server_addr":"127.0.0.1:50056",
+	"local_logconf_path":"/opt/tvu/R/iMatrix/tvufacefilter.conf",
+	"local_report_step":1,
+    "local_scale_width":1280,
+    "local_debug_img":false,
+    "local_debug_img_path":"/tmp/debug",
+	"local_track_maxnum":10,
+	"local_cache_members":150,
+
+	"enable_face":true,
+	"enable_porno":false,
+	"enable_logodet":false,
+	"porno_threshold":0.88,
+	"server_address":"127.0.0.1:50000",
+	"debug":false
+}

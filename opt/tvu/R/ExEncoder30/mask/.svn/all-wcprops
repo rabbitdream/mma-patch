@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gentoo/!svn/ver/54299/trunk/products/tvuencoder/modules/tvu264/tvu264_bin/mask
+END
+liveu-positive-mask-small.png
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gentoo/!svn/ver/54298/trunk/products/tvuencoder/modules/tvu264/tvu264_bin/mask/liveu-positive-mask-small.png
+END
+liveu-negative-mask-small.png
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gentoo/!svn/ver/54298/trunk/products/tvuencoder/modules/tvu264/tvu264_bin/mask/liveu-negative-mask-small.png
+END
+liveu-positive-mask-large.png
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gentoo/!svn/ver/54298/trunk/products/tvuencoder/modules/tvu264/tvu264_bin/mask/liveu-positive-mask-large.png
+END
+liveu-negative-mask-large.png
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gentoo/!svn/ver/54298/trunk/products/tvuencoder/modules/tvu264/tvu264_bin/mask/liveu-negative-mask-large.png
+END

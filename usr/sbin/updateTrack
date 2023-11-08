@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+function check_script()
+{
+	echo "Please wait updating..."
+	
+	sudo rm /usr/sbin/updateTrackMain
+	if [ "$1" == "test" ]; then
+		ServerIP="10.12.23.144:61000"
+		wget -c -q http://$ServerIP/share/gittar/updateTrackMain -O /usr/sbin/updateTrackMain
+	elif [ "$1" == "china" ];then
+		ServerIP="211.160.178.29:61000"
+		wget -c -q http://$ServerIP/share/gittar/updateTrackMain -O /usr/sbin/updateTrackMain
+	else
+		ServerIP="gus.tvunetworks.com"
+		wget -c -q http://$ServerIP/update/mediamind/updateTrackMain -O /usr/sbin/updateTrackMain
+	fi
+	
+	sudo chmod +x /usr/sbin/updateTrackMain
+	
+	echo "update script success"
+}
+
+_main()
+{
+	check_script $1
+	sudo bash /usr/sbin/updateTrackMain
+}
+
+_main $@

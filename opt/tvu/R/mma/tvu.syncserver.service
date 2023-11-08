@@ -1,0 +1,13 @@
+[Unit]
+Description=TVU syncserver for MMA
+
+[Service]
+ExecStart=/opt/tvu/mma/SyncServer -r_port 8288 -service_port 12580
+WorkingDirectory=/opt/tvu/mma
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+
+
